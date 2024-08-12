@@ -35,7 +35,10 @@ def configure_db(host=None, user=None, password=None, db=None):
 	return SQLDatabase(create_engine(f"mysql+mysqlconnector://{user}:{password}@{host}/{db}"))
 
 #configure db
-db = configure_db(mysql_host, mysql_user, mysql_password, mysql_db)
+try:
+	db = configure_db(mysql_host, mysql_user, mysql_password, mysql_db)
+except:
+	st.error("If you are using localhost as Host then you need to install the application and run on your local machine")
 
 #toolkit
 toolkit = SQLDatabaseToolkit(db=db,llm=llm)
