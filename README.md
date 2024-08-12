@@ -2,7 +2,7 @@
 
 This project is a Streamlit application that allows users to interact with a MySQL database through a conversational interface powered by the ChatGroq language model. It utilizes LangChain tools to create an SQL agent capable of running queries and retrieving data based on user input.
 
-[Click Here](https://chat-sql-db.streamlit.app/) to visit the deployed Streamlit Application. You can't use deployed application if your MySQL Host is `localhost`
+[Click Here](https://chat-sql-db.streamlit.app/) to visit the deployed Streamlit Application. You can't use deployed application if your MySQL Host is `localhost`. If this is the case you need to setup and use the application on your local machine as described below.
 
 ## Key Technologies Used
 
