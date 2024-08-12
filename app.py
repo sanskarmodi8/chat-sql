@@ -28,7 +28,7 @@ mysql_db = st.sidebar.text_input("MySQL Database")
 #llm
 llm = ChatGroq(groq_api_key = key, model_name="Llama3-8b-8192", streaming=True)
 
-@st.cache_resource(ttl="2h")
+@st.cache_resource(ttl="2h", suppress_st_warning=True)
 def configure_db(host=None, user=None, password=None, db=None):
 	if not (host and user and password and db):
 		st.error("Please provide all MySQL connection details.")
