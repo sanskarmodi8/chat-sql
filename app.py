@@ -37,8 +37,9 @@ def configure_db(host=None, user=None, password=None, db=None):
 #configure db
 try:
 	db = configure_db(mysql_host, mysql_user, mysql_password, mysql_db)
-except:
+except Exception as e:
 	st.error("If you are using localhost as Host then you need to install the application and run on your local machine")
+	st.error(e)
 
 #toolkit
 toolkit = SQLDatabaseToolkit(db=db,llm=llm)
