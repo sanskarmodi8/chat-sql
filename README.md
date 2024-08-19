@@ -11,7 +11,7 @@ This project is a Streamlit application that allows users to interact with a MyS
 
 - **Streamlit:** Web framework for creating interactive web applications in Python.
 - **LangChain:** Framework for developing applications powered by large language models (LLMs).
-- **Groq Api:** Language model used for generating responses to natural language queries.
+- **Groq Api:** Used Llama 3 Language model through Groq Api for generating responses to natural language queries.
 
 ## Setup Instructions
 
